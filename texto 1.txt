@@ -1,0 +1,64 @@
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop
+$ ls
+'SCVPN Launcher AS.lnk'*   WhatsApp.lnk*   desktop.ini   workspace/
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop
+$ cd workspace
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace
+$ mkdir livro-receitas
+mkdir: cannot create directory ‘livro-receitas’: File exists
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace
+$ ls
+hello.txt  livro-receitas/
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace
+$ cd livro-receitas/
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/SAMSUNG/Desktop/workspace/livro-receitas/.git/
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ ls
+strogonoff.md.txt
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ ls -a
+./  ../  .git/  strogonoff.md.txt
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ cd .git/
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas/.git (GIT_DIR!)
+$ ls
+COMMIT_EDITMSG  config       hooks/  info/  objects/
+HEAD            description  index   logs/  refs/
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas/.git (GIT_DIR!)
+$ cd ..
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ git config --global user.email "priscilasolla.ps@gmail.com"
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ git config --global user.name Perkles
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+
+$ git add *
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ git commit -m "commit inicial"
+[master 5092745] commit inicial
+ 1 file changed, 27 insertions(+)
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ git add *
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ git commit -m "commit inicial"
+[master 5092745] commit inicial
+ 1 file changed, 27 insertions(+)

@@ -1,0 +1,122 @@
+INTRODUÇÃO AO GITHUB - 
+
+TRABALHANDO COM O GITHUB
+
+comando para empurar do local para o remoto
+
+para alterar o nickname e e-mail do GIT
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Perkles
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop
+$ git config --global --unset user.email
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop
+$ git config --global --unset user.name
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop
+$ git config --global user.email "priscilasolla.ps@gmail.com"
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop
+$ git config --global user.name "Perkles"
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=priscilasolla.ps@gmail.com
+user.name=Perkles
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop
+$ ls
+ Priscila.PNG             'texto 1.txt'
+'SCVPN Launcher AS.lnk'*  'texto 2 (ciclo de vida dos arquivos ).txt'
+ WhatsApp.lnk*            'texto 3 introdução ao GitHub.txt'
+ desktop.ini               workspace/
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop
+$ cd workspace
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace
+$ ls
+hello.txt  livro-receitas/
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace
+$ cd livro-receitas
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ ls
+README.md  receitas/
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ git remote add origin https://github.com/PriscilaSollaNunes/livro-receitas.git
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ git remote -v
+origin  https://github.com/PriscilaSollaNunes/livro-receitas.git (fetch)
+origin  https://github.com/PriscilaSollaNunes/livro-receitas.git (push)
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+$ git push origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (11/11), 2.54 KiB | 112.00 KiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/PriscilaSollaNunes/livro-receitas.git
+ * [new branch]      master -> master
+
+SAMSUNG@LAPTOP-9C1ITPS6 MINGW64 ~/Desktop/workspace/livro-receitas (master)
+
